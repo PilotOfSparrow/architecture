@@ -1,4 +1,4 @@
 package domain.project;
 
-public class BugReport {
+public enum TaskType {
 }

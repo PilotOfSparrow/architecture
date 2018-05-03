@@ -9,5 +9,5 @@ public interface Repository<T> {
 
     void remove(T item);
 
-    List<T> query(Specification specification);
+    List<T> query();
 }

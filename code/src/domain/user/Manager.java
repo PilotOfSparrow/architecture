@@ -1,7 +1,7 @@
 package domain.user;
 
 public class Manager extends User {
-    Manager(String name, String login) {
-        super(name, login);
+    Manager(String name, String surname, String login) {
+        super(name, surname, login);
     }
 }

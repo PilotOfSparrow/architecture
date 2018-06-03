@@ -2,13 +2,17 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.Pane?>
-<Pane fx:controller="presentation.controller.ProjectsOverviewController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
-   <MenuButton layoutY="2.0" mnemonicParsing="false" text="Actions">
-     <items>
-       <MenuItem fx:id="addProjectButton" mnemonicParsing="false" text="Create new Project" onAction="#addProject"/>
-       <MenuItem mnemonicParsing="false" text="Add new Task" />
-     </items>
-   </MenuButton>
-   <ListView fx:id="projectList" layoutY="70.0" prefHeight="314.0" prefWidth="509.0" />
-   <Label fx:id="userName" layoutX="300.0" layoutY="6.0" prefHeight="17.0" prefWidth="207.0" text="UserName" />
+<Pane
+        fx:controller="presentation.controller.ProjectsOverviewController"
+        maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0"
+        prefWidth="509.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+    <MenuButton layoutY="2.0" mnemonicParsing="false" text="Actions">
+        <items>
+            <MenuItem fx:id="addProjectButton" mnemonicParsing="false" text="Create new Project"
+                      onAction="#addProject"/>
+            <MenuItem mnemonicParsing="false" text="Add new Task"/>
+        </items>
+    </MenuButton>
+    <ListView fx:id="projectList" layoutY="70.0" prefHeight="314.0" prefWidth="509.0"/>
+    <Label fx:id="userName" layoutX="300.0" layoutY="6.0" prefHeight="17.0" prefWidth="207.0" text="UserName"/>
 </Pane>

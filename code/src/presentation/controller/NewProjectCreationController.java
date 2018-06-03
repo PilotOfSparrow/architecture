@@ -34,16 +34,19 @@ public class NewProjectCreationController {
         String projectName = projectNameTextField.getText();
         if (projectName == null || projectName.equals("")) {
             createWarning("No project name!", "Specify name for project");
+            return;
         }
 
         List<User> developersList = developersCheckListView.getItems();
         if (developersList == null || developersList.isEmpty()) {
             createWarning("No developers specified!", "Specify at least one dev on project");
+            return;
         }
 
         List<User> testersList = testersCheckListView.getItems();
         if (testersList == null || testersList.isEmpty()) {
             createWarning("No testers specified!", "Specify at least one tester on project");
+            return;
         }
 
         List<User> managersList = new ArrayList<>(1);

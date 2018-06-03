@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="414.0" prefWidth="228.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.controller.RegistrationController">
+    <Label layoutX="14.0" layoutY="14.0" text="Login"/>
+    <TextField fx:id="loginTextField" layoutX="14.0" layoutY="31.0" prefHeight="25.0" prefWidth="199.0"/>
+    <Label layoutX="14.0" layoutY="71.0" text="Name"/>
+    <TextField fx:id="nameTextField" layoutX="14.0" layoutY="88.0" prefHeight="25.0" prefWidth="199.0"/>
+    <Label layoutX="15.0" layoutY="128.0" text="Surname"/>
+    <TextField fx:id="surnameTextField" layoutX="14.0" layoutY="145.0" prefHeight="25.0" prefWidth="199.0"/>
+    <Label layoutX="15.0" layoutY="186.0" text="Role"/>
+    <ChoiceBox fx:id="roleChoiceBox" layoutX="14.0" layoutY="203.0" prefHeight="25.0" prefWidth="199.0"/>
+    <Label layoutX="16.0" layoutY="244.0" text="Password"/>
+    <PasswordField fx:id="passwordField" layoutX="15.0" layoutY="261.0" prefHeight="25.0" prefWidth="199.0"/>
+    <Label layoutX="16.0" layoutY="302.0" text="Repeat password"/>
+    <PasswordField fx:id="repeatPasswordField" layoutX="15.0" layoutY="319.0" prefHeight="25.0" prefWidth="199.0"/>
+    <Button fx:id="signUpButton" layoutX="15.0" layoutY="365.0" mnemonicParsing="false" prefHeight="25.0"
+            prefWidth="199.0" text="Sign Up"/>
+</AnchorPane>

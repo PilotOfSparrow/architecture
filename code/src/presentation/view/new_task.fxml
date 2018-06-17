@@ -2,17 +2,16 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane prefHeight="374.0" prefWidth="403.0" xmlns="http://javafx.com/javafx/8.0.121"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.controller.NewTaskController">
-    <Label layoutX="7.0" layoutY="230.0" text="Assignee"/>
-    <Label fx:id="addAssigneeButton" layoutX="8.0" layoutY="247.0" text="*click to add*"/>
-    <Label layoutX="9.0" layoutY="280.0" text="Estimate"/>
-    <Button fx:id="createTaskButton" layoutX="176.0" layoutY="333.0" mnemonicParsing="false" text="Create"/>
-    <Label layoutX="8.0" layoutY="6.0" text="Title"/>
-    <TextField fx:id="taskNameTextField" layoutX="8.0" layoutY="23.0" prefHeight="25.0" prefWidth="222.0"/>
-    <Label layoutX="10.0" layoutY="55.0" text="Description"/>
-    <TextArea fx:id="taskDescriptionTextArea" layoutX="10.0" layoutY="78.0" prefHeight="139.0" prefWidth="383.0"/>
-    <Label layoutX="243.0" layoutY="6.0" text="Type"/>
-    <ComboBox fx:id="taskTypeComboBox" layoutX="243.0" layoutY="23.0" prefWidth="150.0"/>
-    <TextField fx:id="taskEstimateTextField" layoutX="10.0" layoutY="297.0" prefHeight="25.0" prefWidth="45.0"/>
+<AnchorPane prefHeight="353.0" prefWidth="403.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.controller.NewTaskController">
+    <Button fx:id="createTaskButton" layoutX="176.0" layoutY="314.0" mnemonicParsing="false" text="Create" />
+    <Label layoutX="8.0" layoutY="6.0" text="Title" />
+    <TextField fx:id="taskNameTextField" layoutX="8.0" layoutY="23.0" prefHeight="25.0" prefWidth="222.0" />
+    <Label layoutX="10.0" layoutY="55.0" text="Description" />
+    <TextArea fx:id="taskDescriptionTextArea" layoutX="10.0" layoutY="78.0" prefHeight="55.0" prefWidth="383.0" />
+    <Label layoutX="243.0" layoutY="6.0" text="Type" />
+    <ComboBox fx:id="taskTypeComboBox" layoutX="243.0" layoutY="23.0" prefWidth="150.0" />
+   <ListView fx:id="developerListView" layoutX="8.0" layoutY="151.0" prefHeight="142.0" prefWidth="183.0" />
+   <ListView fx:id="testerListView" layoutX="214.0" layoutY="151.0" prefHeight="142.0" prefWidth="183.0" />
+   <Label layoutX="11.0" layoutY="133.0" text="Developers" />
+   <Label layoutX="216.0" layoutY="133.0" text="Testers" />
 </AnchorPane>

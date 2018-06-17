@@ -3,14 +3,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import org.controlsfx.control.CheckListView?>
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.controller.NewProjectCreationController">
-    <TextField fx:id="projectNameTextField" layoutX="14.0" layoutY="24.0"/>
-    <Button fx:id="projectCreateButton" onAction="#createNewProject" layoutX="535.0" layoutY="24.0"
-            mnemonicParsing="false" text="Create"/>
-    <CheckListView fx:id="developersCheckListView" layoutX="14.0" layoutY="71.0" prefHeight="329.0" prefWidth="279.0"/>
-    <CheckListView fx:id="testersCheckListView" layoutX="307.0" layoutY="71.0" prefHeight="329.0" prefWidth="279.0"/>
-    <Label layoutX="14.0" layoutY="6.0" text="Project name:"/>
-    <Label layoutX="126.0" layoutY="54.0" text="Developers"/>
-    <Label layoutX="417.0" layoutY="54.0" text="Testers"/>
+<AnchorPane prefHeight="414.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.controller.NewProjectCreationController">
+    <TextField fx:id="projectNameTextField" layoutX="14.0" layoutY="24.0" />
+    <Button fx:id="projectCreateButton" layoutX="535.0" layoutY="24.0" mnemonicParsing="false" text="Create" />
+    <CheckListView fx:id="developersCheckListView" layoutX="14.0" layoutY="71.0" prefHeight="329.0" prefWidth="279.0" />
+    <CheckListView fx:id="testersCheckListView" layoutX="307.0" layoutY="71.0" prefHeight="329.0" prefWidth="279.0" />
+    <Label layoutX="14.0" layoutY="6.0" text="Project name:" />
+    <Label layoutX="126.0" layoutY="54.0" text="Developers" />
+    <Label layoutX="417.0" layoutY="54.0" text="Testers" />
 </AnchorPane>

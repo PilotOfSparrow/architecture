@@ -9,5 +9,7 @@ public interface Repository<T> {
 
     void remove(T item);
 
+    T get(int id);
+
     List<T> query();
 }

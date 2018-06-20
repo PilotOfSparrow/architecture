@@ -1,6 +1,5 @@
 package datasource;
 
-import datasource.mapper.UserMapper;
 import domain.user.Role;
 import domain.user.User;
 import org.jetbrains.annotations.NotNull;

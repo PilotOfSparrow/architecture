@@ -1,4 +1,4 @@
-package datasource.mapper;
+package datasource;
 
 import domain.project.Project;
 import domain.user.User;
@@ -11,7 +11,7 @@ import java.sql.Statement;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ProjectMapper extends GenericMapper<Project> {
+class ProjectMapper extends GenericMapper<Project> {
     @NotNull
     private GenericMapper<User> userMapper = new UserMapper();
 

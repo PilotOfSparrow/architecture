@@ -1,4 +1,4 @@
-package datasource.mapper;
+package datasource;
 
 import domain.project.*;
 import domain.user.User;
@@ -12,7 +12,7 @@ import java.sql.Statement;
 import java.util.LinkedList;
 import java.util.List;
 
-public class TaskMapper extends GenericMapper<Task> {
+class TaskMapper extends GenericMapper<Task> {
     GenericMapper<User> userMapper = new UserMapper();
     GenericMapper<Project> projectMapper = new ProjectMapper();
     TimestampMapper timestampMapper = new TimestampMapper();

@@ -1,4 +1,4 @@
-package datasource.mapper;
+package datasource;
 
 import domain.project.TaskStatus;
 import domain.project.Timestamp;
@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.util.LinkedList;
 import java.util.List;
 
-public class TimestampMapper extends GenericMapper<Timestamp> {
+class TimestampMapper extends GenericMapper<Timestamp> {
 
     @Override
     public void add(Timestamp timestamp) {

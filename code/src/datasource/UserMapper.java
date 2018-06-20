@@ -1,4 +1,4 @@
-package datasource.mapper;
+package datasource;
 
 import domain.user.Role;
 import domain.user.User;
@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.LinkedList;
 import java.util.List;
 
-public class UserMapper extends GenericMapper<User> {
+class UserMapper extends GenericMapper<User> {
     @Nullable
     public User get(int id) {
         String sql = "SELECT id, login, name, surname, password, role FROM User WHERE id = ?";

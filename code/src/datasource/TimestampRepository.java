@@ -1,6 +1,5 @@
 package datasource;
 
-import datasource.mapper.TimestampMapper;
 import domain.project.Timestamp;
 import org.jetbrains.annotations.NotNull;
 

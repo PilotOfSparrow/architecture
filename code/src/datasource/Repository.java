@@ -2,7 +2,7 @@ package datasource;
 
 import java.util.List;
 
-public interface Repository<T> {
+interface Repository<T> {
     void add(T item);
 
     void update(T item);

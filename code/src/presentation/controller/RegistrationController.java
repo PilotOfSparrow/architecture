@@ -97,6 +97,15 @@ public class RegistrationController {
             }
 
             userModel.addUser(login, name, surname, password, role);
+            if (!userModel.authenticate(login, password)) {
+                UiUtils.getInstance().showErrorDialog(
+                        "Can't add user",
+                        "Try again",
+                        null
+                );
+
+                return;
+            }
 
             UiUtils.getInstance().open(event, "view/all_projects.fxml", "All projects");
         });

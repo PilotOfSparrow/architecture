@@ -7,11 +7,19 @@ import domain.user.User;
 import org.jetbrains.annotations.NotNull;
 
 import java.time.Instant;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.util.List;
+import java.util.Locale;
 
 public class TaskModel {
     @NotNull TaskRepository taskRepository = new TaskRepository();
-    @NotNull TimestampRepository timestampRepository = new TimestampRepository();
+    DateTimeFormatter formatter =
+            DateTimeFormatter
+                    .ofLocalizedDateTime(FormatStyle.SHORT)
+                    .withLocale(Locale.UK)
+                    .withZone(ZoneId.systemDefault());
 
     public void addTask(@NotNull String name,
                         @NotNull String description,
@@ -45,7 +53,7 @@ public class TaskModel {
     }
 
     private void markTime(@NotNull Task task, @NotNull TaskStatus status) {
-        String time = String.valueOf(Instant.now().getEpochSecond());
+        String time = formatter.format(Instant.now());
         Timestamp timestamp = new Timestamp(time, status);
         task.addTimestamp(timestamp);
     }

@@ -23,11 +23,4 @@ abstract class GenericMapper<T> {
             e.printStackTrace();
         }
     }
-
-    @Override
-    protected void finalize() throws Throwable {
-        if (connection != null) {
-            connection.close();
-        }
-    }
 }

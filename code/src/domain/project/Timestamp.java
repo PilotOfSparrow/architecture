@@ -34,7 +34,7 @@ public class Timestamp {
 
     @Override
     public String toString() {
-        return "Status changed to " + status.toString() + "\n" + Instant.ofEpochSecond(Long.valueOf(time)).toString();
+        return "Status changed to " + status.toString() + "\n" + time;
     }
 
     public void setTaskId(int taskId) {

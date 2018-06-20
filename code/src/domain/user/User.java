@@ -21,9 +21,9 @@ public class User {
     private Role role;
 
     public User(
+            @NotNull String login,
             @NotNull String name,
             @NotNull String surname,
-            @NotNull String login,
             @NotNull String password,
             @NotNull Role role) {
         this.name  = name;

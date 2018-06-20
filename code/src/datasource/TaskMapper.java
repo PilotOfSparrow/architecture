@@ -53,7 +53,8 @@ class TaskMapper extends GenericMapper<Task> {
                 "tester_id = ?, " +
                 "type = ?, " +
                 "status = ?, " +
-                "project_id = ?";
+                "project_id = ?"
+                + " WHERE id = ?";
 
         try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             preparedStatement.setString(1, task.getName());
@@ -63,6 +64,7 @@ class TaskMapper extends GenericMapper<Task> {
             preparedStatement.setString(5, task.getTaskType().name());
             preparedStatement.setString(6, task.getTaskStatus().name());
             preparedStatement.setInt(7, task.getProject().getId());
+            preparedStatement.setInt(8, task.getId());
 
             preparedStatement.executeUpdate();
 

@@ -13,7 +13,7 @@ public enum UserUtils {
         return currentUser;
     }
 
-    protected void setCurrentUser(@NotNull User currentUser) {
+    public void setCurrentUser(@NotNull User currentUser) {
         this.currentUser = currentUser;
     }
 

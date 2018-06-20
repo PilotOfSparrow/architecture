@@ -13,7 +13,7 @@ public enum ProjectUtil {
         return currentProject;
     }
 
-    protected void setCurrentProject(@NotNull Project project) {
+    public void setCurrentProject(@NotNull Project project) {
         this.currentProject = project;
     }
 }

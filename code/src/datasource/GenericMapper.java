@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 abstract class GenericMapper<T> {
-    final String CONNECTION_URL = "jdbc:sqlite:manproject.db";
+    private final String CONNECTION_URL = "jdbc:sqlite:manproject.db";
 
     public abstract void add(T item);
 
@@ -21,6 +21,13 @@ abstract class GenericMapper<T> {
             connection = DriverManager.getConnection(CONNECTION_URL);
         } catch (SQLException e) {
             e.printStackTrace();
+        }
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        if (connection != null) {
+            connection.close();
         }
     }
 }

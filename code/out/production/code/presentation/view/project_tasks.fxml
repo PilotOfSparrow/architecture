@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="418.0" prefWidth="404.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.controller.ProjectTasksController">
+    <ListView fx:id="allTasksListView" layoutY="50.0" prefHeight="305.0" prefWidth="200.0" />
+    <Label layoutX="88.0" layoutY="29.0" text="Task" />
+    <ListView fx:id="taskInfoListView" layoutX="208.0" layoutY="50.0" prefHeight="305.0" prefWidth="200.0" />
+    <Label layoutX="284.0" layoutY="29.0" text="Overview" />
+    <Button fx:id="newTaskButton" layoutX="208.0" layoutY="360.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="200.0" text="Create new task" />
+    <Button fx:id="changeStatusButton" layoutY="360.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="200.0" text="Change status" />
+   <Button fx:id="toAllProjectsButton" layoutX="6.0" layoutY="2.0" mnemonicParsing="false" text="All Projects" />
+</AnchorPane>
